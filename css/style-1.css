@@ -1,0 +1,34 @@
+html,
+body {
+  font-family: "Fira Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  font-size: 12px;
+}
+div {
+  max-width: 200px;
+  margin: 25px;
+}
+.title {
+  color: #8cc39f;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+.description {
+  color: #676767;
+  font-size: 10px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding-top: 150px;
+}
