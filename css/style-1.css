@@ -1,22 +1,16 @@
 html,
 body {
   font-family: "Fira Sans", sans-serif;
-  width: 100%;
-  height: 100%;
 }
 section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-left: auto;
+  max-width: 1000px;
+  margin-right: auto;
 }
-span {
-  font-size: 12px;
-}
-div {
-  max-width: 200px;
-  margin: 25px;
-}
+
 .title {
   color: #8cc39f;
   margin-bottom: 18px;
@@ -26,9 +20,29 @@ div {
   color: #676767;
   font-size: 10px;
 }
-
+img {
+  object-fit: contain;
+  height: 160px;
+  width: 160px;
+}
 footer {
   text-align: center;
   width: 100%;
   padding-top: 150px;
+}
+
+@media (max-device-width: 480px) {
+  section {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (min-device-width: 481px) and (max-device-width: 720px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 15px;
+    margin-left: 15px;
+    justify-items: center;
+  }
 }
